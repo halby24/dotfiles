@@ -10,7 +10,7 @@ fi
 PATH=$PATH:$HOME/.local/bin:$HOME/bin:/usr/local/mysql/bin
 export PATH
 
-EDITOR=nvim
+EDITOR=vim
 export EDITOR
 
 export NODE_PATH=/usr/local/lib/node_modules

@@ -64,12 +64,13 @@ if dein#load_state(s:dein_dir)
   call dein#add('cohama/lexima.vim')
   call dein#add('terryma/vim-multiple-cursors')
   call dein#add('cocopon/iceberg.vim')
+  call dein#add('tomasr/molokai')
 
   call dein#end()
   call dein#save_state()
 endif
 
-colorscheme iceberg
+colorscheme molokai
 syntax on
 
 " ãã©ã°ã¤ã³ã®è¿½å ã»åé¤ãtomlãã¡ã¤ã«ã®è¨­å®ãå¤æ´ããå¾ã¯

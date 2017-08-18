@@ -1,7 +1,8 @@
 #!/bin/sh
-ln -sf ~/dotfiles/.vimrc ~/.vimrc
-ln -sf ~/dotfiles/.vim ~/.vim
-ln -sf ~/dotfiles/.bash_profile ~/.bash_profile
-ln -sf ~/dotfiles/.bashrc ~/.bashrc
-ln -sf ~/dotfiles/.dein.toml ~/.dein.toml
-ln -sf ~/dotfiles/.dein_lazy.toml ~/.dein_lazy.toml
+SCRIPT_DIR=$(cd $(dirname $0); pwd)
+ln -sf $SCRIPT_DIR/.vimrc ~/.vimrc
+ln -sf $SCRIPT_DIR/.vim ~/.vim
+ln -sf $SCRIPT_DIR/.bash_profile ~/.bash_profile
+ln -sf $SCRIPT_DIR/.bashrc ~/.bashrc
+ln -sf $SCRIPT_DIR/.dein.toml ~/.dein.toml
+ln -sf $SCRIPT_DIR/.dein_lazy.toml ~/.dein_lazy.toml
