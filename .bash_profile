@@ -16,8 +16,8 @@ export EDITOR
 export NODE_PATH=/usr/local/lib/node_modules
 
 # Pythonのエイリアス
-alias python='python3.6'
-alias pip='pip3.6'
+# alias python='python3.6'
+# alias pip='pip3.6'
 
 # AWS
 # . ~/.aws/env_credential
