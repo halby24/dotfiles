@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # .bash_profile
 
 # Get the aliases and functions
@@ -7,7 +8,7 @@ fi
 
 # User specific environment and startup programs
 
-PATH=$PATH:$HOME/.local/bin:$HOME/bin:/usr/local/mysql/bin
+PATH=$PATH:$HOME/.local/bin:$HOME/bin:/usr/local/mysql/bin:$HOME/Library/Python/3.6/bin
 export PATH
 
 EDITOR=vim
