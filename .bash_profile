@@ -15,3 +15,5 @@ EDITOR=vim
 export EDITOR
 
 export NODE_PATH=/usr/local/lib/node_modules
+
+alias svim='sudo vim -u ~/.vimrc'
