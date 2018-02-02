@@ -19,6 +19,7 @@ if dein#load_state('~/.vim/dein')
   call dein#add('Shougo/neosnippet-snippets')
   call dein#add('cocopon/iceberg.vim')
   call dein#add('tpope/vim-surround')
+  call dein#add('tomtom/tcomment_vim')
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
@@ -41,3 +42,17 @@ endif
 
 set number
 colorscheme iceberg
+set tabstop=4
+set shiftwidth=4
+
+" Auto close
+inoremap { {}<LEFT>
+inoremap [ []<LEFT>
+inoremap ( ()<LEFT>
+inoremap " ""<LEFT>
+inoremap ' ''<LEFT>
+vnoremap { "zdi^V{<C-R>z}<ESC>
+vnoremap [ "zdi^V[<C-R>z]<ESC>
+vnoremap ( "zdi^V(<C-R>z)<ESC>
+vnoremap " "zdi^V"<C-R>z^V"<ESC>
+vnoremap ' "zdi'<C-R>z'<ESC>

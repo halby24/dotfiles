@@ -8,7 +8,7 @@ fi
 
 # User specific environment and startup programs
 
-PATH=$PATH:$HOME/.local/bin:$HOME/bin:/usr/local/mysql/bin:$HOME/Library/Python/3.6/bin
+PATH=$PATH:$HOME/.local/bin:$HOME/bin:/usr/local/mysql/bin:$HOME/Library/Python/3.6/bin:$HOME/.cargo/bin
 export PATH
 
 EDITOR=vim
@@ -17,3 +17,10 @@ export EDITOR
 export NODE_PATH=/usr/local/lib/node_modules
 
 alias svim='sudo vim -u ~/.vimrc'
+
+export PATH="$HOME/.cargo/bin:$PATH"
+
+
+PYENV_PATH="$HOME/.pyenv"
+export PATH="$PYENV_PATH/bin:$PATH"
+eval "$(pyenv init -)"
