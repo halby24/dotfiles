@@ -8,19 +8,19 @@ fi
 
 # User specific environment and startup programs
 
-PATH=$PATH:$HOME/.local/bin:$HOME/bin:/usr/local/mysql/bin:$HOME/Library/Python/3.6/bin:$HOME/.cargo/bin
+PATH=/usr/local/var/nodebrew/current/bin:$HOME/.local/bin:$HOME/bin:$PATH
 export PATH
 
 EDITOR=vim
 export EDITOR
 
+export NODEBREW_ROOT=/usr/local/var/nodebrew
 export NODE_PATH=/usr/local/lib/node_modules
 
 alias svim='sudo vim -u ~/.vimrc'
+alias ubuntu='docker exec -it ubuntu bash'
 
-export PATH="$HOME/.cargo/bin:$PATH"
-
-
-PYENV_PATH="$HOME/.pyenv"
-export PATH="$PYENV_PATH/bin:$PATH"
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
